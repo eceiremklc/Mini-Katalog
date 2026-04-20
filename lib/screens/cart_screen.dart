@@ -122,9 +122,13 @@ class CartScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 24),
                   ElevatedButton(
-                    onPressed: () => Navigator.pop(context),
-                    child: const Text('Alışverişe Başla'),
-                  ),
+                      onPressed: () => Navigator.pop(context),
+                      child: const Text('Alışverişe Başla'),
+                      style: ButtonStyle(
+                          padding: MaterialStateProperty.all(
+                        const EdgeInsets.symmetric(
+                            horizontal: 24, vertical: 12),
+                      ))),
                 ],
               ),
             )
